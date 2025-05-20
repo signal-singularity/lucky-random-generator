@@ -1,12 +1,16 @@
+import hashlib
+
 block = {
-    "number": "22419349",
-    "time": "1746470015",
-    "miner": "0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5",
-    "count": 1,
+    "number": "0x157acfe",
+    "hash": "0x8a826e6c3cbeacc82937ad7b6a821a6a25b63383bc05eb0ddb807bb41c518d34",
+    "miner": "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97",
+    "time": "0x682c4633",
+    "count": 1
 }
 
 # Generate the seed
-seed = block["number"] + block["time"] + block["miner"]
+seed_input = block["number"] + block["hash"] + block["miner"] + block["time"]
+seed = hashlib.sha256(seed_input.encode()).hexdigest()
 
 hash_value = 0
 for char in seed:

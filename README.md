@@ -10,10 +10,11 @@ The code here is a Python implementation, identical to the original version, and
 
 ```python
 block = {
-    "number": "22419349", # Block number
-    "time": "1746470015", # Block generation time
-    "miner": "0x95222290dd7278aa3ddd389cc1e1d165cc4bafe5",  # Miner ID
-    "count": 1,  # Number of operations
+    "number": "0x157acfe", # Block number (HEX)
+    "hash": "0x8a826e6c3cbeacc82937ad7b6a821a6a25b63383bc05eb0ddb807bb41c518d34", # Block hash
+    "miner": "0x4838b106fce9647bdf1e7877bf73ce8b0bad5f97",  # Miner ID
+    "time": "0x682c4633", # Block generation time (HEX)
+    "count": 1  # Number of operations
 }
 ```
 
