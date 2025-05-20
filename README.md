@@ -27,13 +27,15 @@ prizes = [
 ]
 # Member names
 memebers = [
-    "Novvy"
+    "User1",
+    "User2",
 ]
 ```
 
 ### Result
 
 ```bash
-Winner: Novvy - Prize: P1
-Total number: 1
+Winner: User2 - Prize: P2
+Winner: User1 - Prize: P2
+Total number: 2
 ```

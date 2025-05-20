@@ -8,6 +8,16 @@ block = {
     "count": 1
 }
 
+prizes = [
+    ["P1",  3],
+    ["P2",  3],
+]
+
+memebers = [
+    "User1",
+    "User2",
+]
+
 # Generate the seed
 seed_input = block["number"] + block["hash"] + block["miner"] + block["time"]
 seed = hashlib.sha256(seed_input.encode()).hexdigest()
@@ -23,14 +33,7 @@ def get_random_int(max_value: int) -> int:
     hash_value = (hash_value * 9301 + 49297) % 233280
     return abs(hash_value) % max_value
 
-# Data
-prizes = [
-    ["P1",  3],
-    ["P2",  3],
-]
-memebers = [
-    "Novvy"
-]
+memebers = memebers[::-1]
 
 min_value = min(len(prizes), len(memebers))
 
