@@ -35,7 +35,11 @@ def get_random_int(max_value: int) -> int:
 
 memebers = memebers[::-1]
 
-min_value = min(len(prizes), len(memebers))
+prizes_count = 0
+for i in prizes:
+    prizes_count += i[1]
+
+min_value = min(prizes_count, len(memebers))
 
 total_count = 0
 while min_value > 0:
